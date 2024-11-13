@@ -1,52 +1,107 @@
-//Scopes
+// Operators
 
-//-------------------------------------------------------
+// Arithmatic Operators
 
-// Global scope
-//Global scope refers to variables or functions that are declared outside any function or block. They are accessible from anywhere in your code.
+let x=10
+let y=5
 
-let globalVar = "I am global!";  
+console.log(x+y)
+console.log(x-y)
+console.log(x*y)
+console.log(x/y)
+console.log(x%y)
+console.log(x**y)
 
-function showGlobalVar() {
-  console.log(globalVar);  
-}
+//---------------------------------------------------->
 
-showGlobalVar();  
-console.log(globalVar);  
+// Assignment Operators
 
-//globalVar is declared in the global scope, so it is accessible both inside and outside the function showGlobalVar().
+//    =    Assign	x = 5
+//    +=   Add and assign	x += 5 (same as x = x + 5)
+//    -=   Subtract and assign	x -= 5 (same as x = x - 5)
+//    *=   Multiply and assign	x *= 5
+//    /=   Divide and assign	x /= 5
+//    %=	 Modulus and assign	x %= 5
 
 
-//-------------------------------------------------------
+//--------------------------------------------------->
 
-// Functional Scope (Local Scope)
+// Comparison Operators
 
-// Variables declared inside a function are said to be in the local scope (also called function scope). These variables are only accessible within the function they are declared in.
+let a = 18;
+//    ==	Equal to	
 
-function myFunction() {
-    let localVar = "I am local!";  
-    console.log(localVar);  
-  }
-  
-  myFunction();
-  console.log(localVar);  // Error: localVar is not defined
+console.log(a == "18"); 
 
-  // localVar is accessible only within the function myFunction() and cannot be accessed outside of it. If you try to access localVar outside, you'll get an error.
+//    ===	   Strict equal (type & value)	
 
-  //-------------------------------------------------------
+console.log(a === "18"); 
 
-  // Block Scope
+//    !=	   Not equal	
 
- //  With the introduction of ES6 (ECMAScript 2015), two new keywords, let and const, were introduced to provide block-scoped variables. A block is defined by curly braces { } (e.g., inside loops or conditionals).
+console.log(a !="18");
 
- if (true) {
-    let blockVar = "I am block-scoped!";
-    console.log(blockVar);  
-  }
-  
-  console.log(blockVar);  // Error: blockVar is not defined
-  
-  
+//    !==	   Strict not equal	
 
+console.log(a!="18");
+
+//    >	     Greater than	
+
+console.log(a >10);
+
+//    <	     Less than	
+
+console.log(a <10);
+
+//    >=	   Greater than or equal	
+
+console.log(a >= 18);
+
+//    <=	   Less than or equal	
+
+console.log(a <= 18);
+
+
+//---------------------------------------------------->
+
+//  Logical Operators
+
+// &&	 AND	(if both values are true then output will true)
+
+let isAdult = true;
+let hasID = true;
+console.log(isAdult && hasID); 
+
+// || OR (if one value is true then output will true)
+
+let IsLoggedIn = true;
+let hasCNIC = false;
+console.log(isAdult || hasID); 
+
+// NOT  ! (make the given value opposite i.e true -> flase)
+
+let name =true;
+console.log(!name); 
+
+
+//------------------------------------------------------->
+
+// Spread Operator (...)
+
+// Used to expand arrays, objects, or function arguments.
+let arr = [1, 2, 3];
+let arr2 = [ 4, 5];
+console.log(...arr,...arr2); 
+
+//-------------------------------------------------------->
+
+// Rest Operator
+
+// The rest operator ... collects multiple elements into a single array or object. It's mainly used in function parameters to capture a variable number of arguments or to collect the "rest" of an array/object's elements.
+
+const user = { id: 1, names: "Ali", age: 25, job: "Developer" };
+const { names, ...otherDetails } = user;
+console.log(names);         // Output: "Ali"
+console.log(otherDetails); // Output: { id: 1, age: 25, job: "Developer" }
 
 

@@ -1,3 +1,5 @@
+
+
 // IF (code run if the condition is true)
 
 
@@ -74,6 +76,54 @@ switch (cups) {
         
         break;
 }
+
+
+
+//-------------------------------------------------------->
+
+// Falsy Values
+
+// false , 0 (and -0) , "" (empty string) ,  null , undefined, NaN (Not-a-Number)
+
+// Truthy value
+
+// Anything else falsy value are truthy value.
+
+// Example
+
+let name = "Ali";
+
+if (name) {
+  console.log("Name is truthy, so it exists."); 
+}
+
+// Example
+
+
+if ("hello") {
+    console.log("This is truthy!");  
+  }
+  
+  if (42) {
+    console.log("Numbers other than 0 are truthy!");  
+  }
+  
+  if ({}) {
+    console.log("Empty objects are truthy!");  
+  }
+  
+  if ([]) {
+    console.log("Empty arrays are truthy!");  
+  }
+  
+  if (function() {}) {
+    console.log("Functions are truthy!"); 
+  }
+ 
+  
+
+
+
 
 
 

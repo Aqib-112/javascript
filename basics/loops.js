@@ -45,9 +45,26 @@ for (let i = 1; i <= 10; i++) {
 
 
   //------------------------------------------------------------
+// For of loop
+//The for...of loop is used to iterate over iterable objects like arrays, strings, maps, sets, and other iterable collections.
+
+const favFruit = ["apple", "banana", "cherry"];
+for (const fruit of favFruit) {
+  console.log(fruit);
+}
+
+// Example with String
+
+const name = "sam";
+for (const char of name) {
+  console.log(char);
+}
+
+
+
 
 //  For Loop In
-// usually used for objects
+// The for...in loop is used to iterate over the enumerable properties of an object. Instead of values, it iterates over the keys (or property names) of the object. It’s commonly used for objects but can also work with arrays, though this is generally discouraged because it iterates over keys rather than values.
 
 let person = {
     name: "Sam",
