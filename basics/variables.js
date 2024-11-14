@@ -34,7 +34,7 @@ console.log(UserId);
 // console.log(UserId); //give error
 
 
-//  EXAMPLES
+//---------------------- PROBLEMs ----------------------->
 
 var country = "PAKISTAN";
 let population = 330000000;
@@ -47,7 +47,7 @@ console.log(city);
 population = 881000000;   
 console.log(population);  
 
-//  EXAMPLES
+//---------------------- PROBLEMs ----------------------->
 
 let score = 100;
 console.log(score); 
@@ -60,7 +60,9 @@ console.log(maxScore);
 
 // maxScore = 250; // Error
 
-// EXAMPLE
+
+
+//---------------------- PROBLEMs ----------------------->
 
 console.log(a); // Output: undefined 
 var a = 5;
@@ -74,11 +76,42 @@ const c = 15;
 
 
 
+//---------------------- PROBLEMs ----------------------->
+
+const items = ["apple", "banana"];
+items.push("orange"); 
+console.log(items); 
+
+items = ["new array"]; 
+
+// const prevents reassignment of the variable itself but not modification of objects or arrays that it references.use spread methods that return a new array or object rather than modifying the existing one.
+
+const item = ["apple", "banana"];
+const newItems = [...item, "orange"]; 
+console.log(newItems); 
+
+//---------------------- PROBLEMs ----------------------->
+
+// Variables declared with let and const are hoisted to the top of their scope but are in a temporal dead zone from the start of the block until the declaration is encountered.
+
+console.log(value); 
+let value = 10;
+
+// Always declare variables at the beginning of their scope to avoid the temporal dead zone.
+
+let values = 10;
+console.log(values); 
 
 
+//---------------------- PROBLEMs ----------------------->
 
+let num = "5";
+let total = num + 10;
+console.log(total); 
 
+// convert into number 1st
 
-
-
+let newnum = "5";
+let newtotal = Number(newnum) + 10;
+console.log(newtotal);
 

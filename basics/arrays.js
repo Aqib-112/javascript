@@ -130,12 +130,52 @@ numbers.sort((a, b) => a - b);
 
 const reversedFruits = fruits.reverse();
 
-
+//-------------------------------------------------->
 
 // Transforming Arrays Method
 
 // map()
-// Creates a new array with the results of applying a function to every element
+// The map() method in JavaScript is used to create a new array by applying a function to each element of an existing array.
 
-const lengths = fruits.map(fruit => fruit.length); 
+const numberss = [1, 2, 3, 4];
+const doubledNumberss = numberss.map(number => number * 2);
+console.log(doubledNumberss); // Output: [2, 4, 6, 8]   
+
+//  Example 2
+
+const people = [
+    { name: "Ali", age: 25 },
+    { name: "Bhai", age: 30 },
+    { name: "Sam", age: 35 }
+  ];
+  
+  const names = people.map(person => person.name);
+  console.log(names); // Output: ["Ali", "Bhai", "Sam"]
+
+
+//-------------------------------------------------->
+
+// filter() 
+// The filter() method in JavaScript is used to create a new array that contains only the elements from the original array that pass a specific test (defined by a callback function). Like map(), filter() does not change the original array—it returns a new one.
+
+// Example want a new array with even numbers
+
+const numberz = [1, 2, 3, 4, 5, 6];
+const evenNumberz = numberz.filter(number => number % 2 === 0);
+console.log(evenNumberz); // Output: [2, 4, 6]
+
+  
+// Example filtering Object in Array
+
+const peoples = [
+    { name: "Ali", age: 25 },
+    { name: "Bhai", age: 30 },
+    { name: "Sam", age: 35 }
+  ];
+  
+  const adults = peoples.filter(person => person.age >= 30);
+  console.log(adults); 
+  // Output: [{ name: "Bhai", age: 30 }, { name: "Sam", age: 35 }]
+  
+
  

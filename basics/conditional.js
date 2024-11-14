@@ -40,6 +40,21 @@ if (AnOtherNum > 0) {
 
   //------------------------------------------------------------
 
+const score = 75;
+
+if (score >= 90) {
+  console.log("Grade: A");
+} else if (score >= 80) {
+  console.log("Grade: B");
+} else if (score >= 70) {
+  console.log("Grade: C");
+} else {
+  console.log("Grade: F");
+}
+
+
+  //------------------------------------------------------------
+
 // SWITCH SATATEMENT
 let day = "Wednesday";
 
@@ -75,6 +90,48 @@ switch (cups) {
         console.log("No matching values found");
         
         break;
+}
+
+
+//-------------------------------------------------------->
+
+const color = "blue";
+
+switch (color) {
+  case "red":
+    console.log("The color is red.");
+    break;
+  case "blue":
+    console.log("The color is blue.");
+    break;
+  case "green":
+    console.log("The color is green.");
+    break;
+  default:
+    console.log("Unknown color.");
+}
+
+
+//-------------------------------------------------------->
+
+// Break in Loop
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    break; 
+  }
+  console.log(i);
+}
+
+//-------------------------------------------------------->
+
+// Continue in Loop
+
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) {
+    continue; 
+  }
+  console.log(i);
 }
 
 
@@ -121,7 +178,6 @@ if ("hello") {
   }
  
   
-
 
 
 

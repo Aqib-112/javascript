@@ -105,3 +105,4 @@ console.log(names);         // Output: "Ali"
 console.log(otherDetails); // Output: { id: 1, age: 25, job: "Developer" }
 
 
+

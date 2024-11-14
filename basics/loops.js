@@ -60,7 +60,17 @@ for (const char of name) {
   console.log(char);
 }
 
+  //------------------------------------------------------------
 
+
+const products = ["Laptop", "Smartphone", "Headphones", "Keyboard"];
+
+for (const product of products) {
+  console.log("Product available:", product);
+}
+
+
+  //------------------------------------------------------------
 
 
 //  For Loop In
@@ -146,8 +156,53 @@ do {
     i++;
 } while (i < 10);
 
+//---------------------- PROBLEMs ----------------------->
+
+// Calculating the Total Price of Items in a Shopping Cart
+
+const cart = [12.99, 23.95, 4.99, 19.99];
+let totalPrice = 0;
+
+for (let i = 0; i < cart.length; i++) {
+  totalPrice += cart[i];
+}
+
+console.log("Total Price:", totalPrice);
+
+//---------------------- PROBLEMs ----------------------->
+
+//  User Login Attempts
+
+const correctPassword = "securePassword";
+let attempts = 0;
+// let userInput;
+
+while (attempts < 3) {
+ let userInput = prompt("Enter your password:"); 
+  if (userInput === correctPassword) {
+    console.log("Login successful!");
+    break;
+  } else {
+    console.log("Incorrect password, try again.");
+    attempts++;
+  }
+}
+
+if (attempts === 3) {
+  console.log("Account locked due to too many failed attempts.");
+}
 
 
+//--------------------------------------------------------------->
+
+const numbers = [3, 5, 2, -1, 4, 6];
+
+for (const num of numbers) {
+  if (num < 0) {
+    console.log("First negative number found:", num);
+    break;
+  }
+}
 
 
 
