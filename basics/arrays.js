@@ -178,4 +178,17 @@ const peoples = [
   // Output: [{ name: "Bhai", age: 30 }, { name: "Sam", age: 35 }]
   
 
- 
+//----------------------------------------------------------
+
+//Reduce()
+//reduce() method is used to accumulate values in an array by applying a function to each element and returning a single output
+
+const numb = [1, 2, 3, 4, 5];
+
+
+const sum = numb.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0);
+
+console.log(sum); 
+
